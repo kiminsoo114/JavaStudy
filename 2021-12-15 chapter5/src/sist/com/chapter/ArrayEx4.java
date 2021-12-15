@@ -1,4 +1,4 @@
-package basicjava.chapter5;
+package sist.com.chapter;
 
 public class ArrayEx4 {
 	public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class ArrayEx4 {
 		System.arraycopy(abc, 0, result, 0, abc.length);
 		System.arraycopy(num, 0, result, abc.length, num.length);
 		System.out.println(result);
-		0
+
 		//배열 abc을 배열 num의 첫 번째 위치부터 배열 abc의 길이만큼 복사
 		System.arraycopy(abc, 0, num, 0, abc.length);
 		System.out.println(num);

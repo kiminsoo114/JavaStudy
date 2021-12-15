@@ -1,4 +1,4 @@
-package basicjava.chapter5;
+package sist.com.chapter;
 
 public class ArrayEx3 {
 	public static void main(String[] args) {
@@ -26,4 +26,3 @@ public class ArrayEx3 {
 				}
 				}	
 	}
-

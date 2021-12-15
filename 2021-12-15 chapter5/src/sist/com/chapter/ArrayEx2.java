@@ -1,4 +1,4 @@
-package basicjava.chapter5;
+package sist.com.chapter;
 
 import java.util.Arrays;
 
