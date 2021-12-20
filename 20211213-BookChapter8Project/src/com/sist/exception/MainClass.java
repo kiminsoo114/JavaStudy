@@ -6,7 +6,7 @@ package com.sist.exception;
  *      오류발생 
  *        = 에러(Error) => 소스상에서 해결할 수 없는 에러
  *           예) 메모리 부족 , 이클립스상에서 오류  
- *        = 예외(Exception) => 소스상에서 해결리 가능한 가벼운 에러 
+ *        = 예외(Exception) => 소스상에서 해결이 가능한 가벼운 에러 
  *          ==============
  *           예)  1. 사용자 입력값이 잘못된 경우 (유효성 검사)
  *                   나누기 => 10/0 => 0으로 나눌 수 없다 
@@ -203,10 +203,12 @@ public class MainClass {
 	  }
 	  catch(ArrayIndexOutOfBoundsException e)
 	  {
-		  System.out.println(e.getMessage());// 에러메세지 출력 
+		  System.out.println(e.toString());// 에러메세지 출력 
 	  }catch(ArithmeticException e)
 	  {
 		  System.out.println("0으로 나눌 수 없습니다!!");
+	  }catch(ClassCastException e) {
+		  System.out.println(e.toString());
 	  }
 	  catch(Exception e) // 예외처리의 상위 클래스 => 
       // 모든 예외를 처리 할 수 있다
