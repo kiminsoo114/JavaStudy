@@ -43,7 +43,7 @@ public class MainClass3 {
         {
         	System.out.print(i+" ");
         }
-        
+        System.out.println();
         A a=new A();
         System.out.println("a.a="+a.a);
         s1.changeValue(a);

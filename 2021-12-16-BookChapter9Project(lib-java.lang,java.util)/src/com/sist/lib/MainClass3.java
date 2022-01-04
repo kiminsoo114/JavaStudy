@@ -1,4 +1,5 @@
 package com.sist.lib;
+
 // java.lang , java.util
 /*
  *   java.util => 프로그램에서 유용하게 사용되는 클래스 집합 
@@ -29,22 +30,15 @@ public class MainClass3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        // 난수 => nextInt(30) ==> 0~29 
-		Random r=new Random();
-		//int i=r.nextInt(); // int 범위에서 발생 (-21억 4천~21억 4천~~)
-		//System.out.println(i);
-		int i=r.nextInt(100); // 0~99 (100제외)
+		// 난수 => nextInt(30) ==> 0~29
+		Random r = new Random();
+		// int i=r.nextInt(); // int 범위에서 발생 (-21억 4천~21억 4천~~)
+		// System.out.println(i);
+		int i = r.nextInt(100); // 0~99 (100제외)
 		// nextInt(n) ==> 0~n (n은 제외)
 		System.out.println(i);
-		// 실수 => nextDouble() ==> 0.0~0.99 
-		 
+		// 실수 => nextDouble() ==> 0.0~0.99
+
 	}
 
 }
-
-
-
-
-
-
-

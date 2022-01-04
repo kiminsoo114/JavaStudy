@@ -28,7 +28,7 @@ public class MainClass5 {
         {
         	if(title.length()>7)
         	{
-        		title=title.substring(0,7)+"...";
+        		title=title.substring(0,8)+"...";
         	}
         	System.out.println(title);
         }

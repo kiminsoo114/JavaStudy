@@ -9,7 +9,7 @@ package com.sist.main;
  *  
  *  int a = 10;
  *  int b = ++a + a++ + a++ + ++a  
- *           11    11    12    14   ===>48
+ *           11    11    12    14   ===>48  
  *           
  *  int a = 10;
  *  int b = ++a + ++a + ++a + ++a       

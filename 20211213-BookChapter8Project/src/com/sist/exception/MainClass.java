@@ -1,4 +1,5 @@
 package com.sist.exception;
+
 /*
  *    프로그램 : 오류발생 (33대란) 소프트포럼 
  *    1,000 ==> 10,00 
@@ -193,47 +194,29 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	  try
-	  {
-        int[] arr=new int[2];
-        arr[0]=Integer.parseInt("10 ");
-        arr[2]=0; // 에러 출력 (배열 범위 초과)
-        int result=arr[0]/arr[1]; // error ==> catch 2
-        System.out.println(result);
-	  }
-	  catch(ArrayIndexOutOfBoundsException e)
-	  {
-		  System.out.println(e.toString());// 에러메세지 출력 
-	  }catch(ArithmeticException e)
-	  {
-		  System.out.println("0으로 나눌 수 없습니다!!");
-	  }catch(ClassCastException e) {
-		  System.out.println(e.toString());
-	  }
-	  catch(Exception e) // 예외처리의 상위 클래스 => 
-      // 모든 예외를 처리 할 수 있다
-	  {
-		  System.out.println(e.getMessage());
-	  }
-	  
-      System.out.println("프로그램 종료!!");
+		try {
+			int[] arr = new int[2];
+			arr[0] = Integer.parseInt("10 ");
+			arr[2] = 0; // 에러 출력 (배열 범위 초과)
+			int result = arr[0] / arr[1]; // error ==> catch 2
+			System.out.println(result);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.toString());// 에러메세지 출력
+		} catch (ArithmeticException e) {
+			System.out.println("0으로 나눌 수 없습니다!!");
+		} catch (ClassCastException e) {
+			System.out.println(e.toString());
+		} catch (Exception e) // 예외처리의 상위 클래스 =>
+		// 모든 예외를 처리 할 수 있다
+		{
+			System.out.println(e.getMessage());
+		}
+
+		System.out.println("프로그램 종료!!");
 	}
 	/*
-	 *      Throwable
-	 *      =========
-	 *      |       |
-	 *    Error   Exception
-	 *              |
-	 *            RuntimeException(여러개 동시처리)
-	 *              |
-	 *              (한개씩 처리)
-	 *            ArrayIndexOutOfBoundsException
-	 *            ArithmeticException
+	 * Throwable ========= | | Error Exception | RuntimeException(여러개 동시처리) | (한개씩
+	 * 처리) ArrayIndexOutOfBoundsException ArithmeticException
 	 */
 
 }
-
-
-
-
-

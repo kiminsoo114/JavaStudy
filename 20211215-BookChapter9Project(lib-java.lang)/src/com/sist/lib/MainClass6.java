@@ -5,7 +5,7 @@ package com.sist.lib;
  *   replace(String s1,String s2)
  *           old         new 
  *   replaceAll(String regex,String s)
- *           old              new  ==> 정규식 
+ *               old           new  ==> 정규식 
  *           
  *   문자의 형식
  *   211.238.142.181
@@ -43,8 +43,8 @@ public class MainClass6 {
         String ss3=data.replaceAll("[^0-9]", "");
         // 숫자 => 0-9
         System.out.println(ss3);
-        String ss4=data.replaceAll("[^가-R]", "");
-        // 한글 => 가-R  
+        String ss4=data.replaceAll("[^가-하]", "");
+        // 한글 => 가-  
         // ^부정 (제외하고)
         // [^] 부정  
         // ^[가-R] ==> 시작  (한글로 시작한 모든 문자)

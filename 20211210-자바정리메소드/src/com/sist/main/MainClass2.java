@@ -23,7 +23,7 @@ public class MainClass2 {
 		Scanner scan =new Scanner(System.in);
 		while(true) {
 			//사용자 입력
-			System.out.println("세자리 정수를 입력하세요");
+			System.out.println("세자리 정수를 입력하세요.");
 			int input = scan.nextInt();
 			//세자리 정수가 아닌 경우에 처리
 //			if(input>99&&input<1000) { //&&포함이 된 경우
@@ -48,7 +48,7 @@ public class MainClass2 {
 			//오류처리
 			if(user[0]==user[1]||user[1]==user[2]||user[0]==user[2])
 			{
-				System.out.println("0을 사용 할 수 없습니다.");
+				System.out.println("같은 숫자를 사용할 수 없습니다.");
 				continue;
 			}
 			//힌트

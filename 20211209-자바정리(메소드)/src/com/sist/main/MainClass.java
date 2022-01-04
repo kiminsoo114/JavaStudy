@@ -67,7 +67,8 @@ public class MainClass {
 		for(int i=0;i<month-1;i++) {
 			total+= lastday[i];
 		}
-		total++;
+		
+	total++;//선택한 달의 첫날을 하기위해서 ++를 한것
 		
 		//요일 구하기
 		int week=total%7;
@@ -82,7 +83,7 @@ public class MainClass {
 			 * 
 			 * 
 			*/	
-		String[] strWeek= {"월","화","수","목","금","토"};
+		String[] strWeek= {"일","월","화","수","목","금","토"};
 		//요일 출력을 해보자
 		System.out.println(year+"년도 "+month+"월");
 		for(int i=0;i<strWeek.length;i++) {

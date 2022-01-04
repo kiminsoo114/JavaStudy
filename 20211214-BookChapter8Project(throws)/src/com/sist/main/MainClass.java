@@ -1,4 +1,5 @@
 package com.sist.main;
+
 /*
  *   예외처리 : 사전에 에러발생에 대한 방지 프로그램 
  *            => 비정상 종료를 하지 않고 정상수행이 가능하게 만들어 준다 
@@ -107,19 +108,19 @@ package com.sist.main;
  *         => throw => 예외처리 호출 
  */
 public class MainClass {
-    // 예외가 있는 메소드 선언 (라이브러리 메소드) => 자바에서 제공, 외부 제공
-	public static void add(int a,int b) throws Exception
-	{
-		System.out.println(a+b);
-		System.out.println(a-b);
-		System.out.println(a*b);
-		System.out.println(a/b);// b==0
+	// 예외가 있는 메소드 선언 (라이브러리 메소드) => 자바에서 제공, 외부 제공
+	public static void add(int a, int b) throws Exception {
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a / b);// b==0
 	}
+
 	// sleep(long m) throws InterruptedException
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        try {
-			add(10,20);
+		try {
+			add(10, 20);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -127,5 +128,3 @@ public class MainClass {
 	}
 
 }
-
-

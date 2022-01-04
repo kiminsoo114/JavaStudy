@@ -346,6 +346,7 @@ public class MainClass1 {
 			// Object => 아닌 원하는 데이터형 변환 => 제네릭스 
 			// ArrayList<String>
 			// <Type:class> => ArrayList<int>(X) , ArrayList<Integer>
+			
 			/*
 			 *     Object
 			 *       |
@@ -353,6 +354,7 @@ public class MainClass1 {
 			 *    |
 			 *   String 
 			 */
+			
 			//  형변환 ==> Object는 가장 큰 데이터형 =>강제 형변환 
 			//  왼쪽편이 크거나 같으면 형변환을 하지 않는다
 			//  오른편이 크면 반드시 형변환을 한다 
@@ -472,6 +474,5 @@ public class MainClass1 {
 	}
 
 }
-
 
 

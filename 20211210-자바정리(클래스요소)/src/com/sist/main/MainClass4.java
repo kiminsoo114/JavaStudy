@@ -43,7 +43,7 @@ package com.sist.main;
  *     32 page 접미어 
  *             L(l) => long , F(f) => float
  *     57 page
- *        \t , \n , \"  , \\ (경로명)
+ *        \t , \n , \"(큰따옴표 쓸때), \'(작은 따옴표)  , \\ (경로명)
  *     82 page => 형변환 (83 page)
  *        String 
  *        7+""+10.5+""+'A' == "710.5A"
@@ -52,7 +52,7 @@ package com.sist.main;
  *   87page 연산자의 종류 
  *   (type) => 형변환 
  *   ? :    => 삼항 연산자
- *   instanceof => 객체 크기 비교 
+ *   instanceof => 객체 크기 비교 / 객체의 타입을 확인하는 연산자 /왼쪽에는 참조변수 오른쪽에는 타입으 넣는다.
  *   
  *   Object obj=new Object();
  *   String s=new String();

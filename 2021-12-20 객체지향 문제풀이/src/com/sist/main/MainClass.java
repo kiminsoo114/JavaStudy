@@ -1,4 +1,5 @@
 package com.sist.main;
+
 /*
  * 
  * 1. SutdaCard  => num , isKwang 
@@ -279,64 +280,79 @@ e. protected가 붙으면, 다른 패키지의 자손 클래스에서 접근이 
 // 캡슐화 
 // 변수명이 틀린 경우 
 // 지역변수 우선 => 멤버변수 
-class MainClass{
+class MainClass {
 	private int num;
 	private boolean isKwang;
+
 	public int getNum() {
 		return num;
 	}
+
 	public void setNum(int num) {
 		this.num = num;
 	}
+
 	public boolean isKwang() {
 		return isKwang;
 	}
+
 	public void setKwang(boolean isKwang) {
 		this.isKwang = isKwang;
 	}
-	
+
 }
-class Student{
+
+class Student {
 	private String name;
-	private int ban,no,kor,eng,math;
+	private int ban, no, kor, eng, math;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getBan() {
 		return ban;
 	}
+
 	public void setBan(int ban) {
 		this.ban = ban;
 	}
+
 	public int getNo() {
 		return no;
 	}
+
 	public void setNo(int no) {
 		this.no = no;
 	}
+
 	public int getKor() {
 		return kor;
 	}
+
 	public void setKor(int kor) {
 		this.kor = kor;
 	}
+
 	public int getEng() {
 		return eng;
 	}
+
 	public void setEng(int eng) {
 		this.eng = eng;
 	}
+
 	public int getMath() {
 		return math;
 	}
+
 	public void setMath(int math) {
 		this.math = math;
 	}
-	
-
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -12,10 +12,8 @@ package com.sist.main;
    
    throw new 예외처리()
  */
-class A
-{
-	public void display()
-	{
+class A {
+	public void display() {
 		System.out.println("A:Call...");
 	}
 }
@@ -23,10 +21,10 @@ public class 문제4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        A a=new A(); // int malloc()
-        a.display();
-        
-        new A().display();
+		A a = new A(); // int malloc()
+		a.display();
+
+		new A().display();
 	}
 
 }

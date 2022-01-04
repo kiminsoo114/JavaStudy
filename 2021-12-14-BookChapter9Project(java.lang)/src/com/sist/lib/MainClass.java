@@ -1,4 +1,5 @@
 package com.sist.lib;
+
 /*
  *   자바 
  *   1) 문법 
@@ -122,57 +123,58 @@ package com.sist.lib;
 class Sawon /* extends Object */
 {
 	private String name;
-	public Sawon(String name)
-	{
-		// 생성자 => 변수의 초기화 
+
+	public Sawon(String name) {
+		// 생성자 => 변수의 초기화
 		System.out.println("Sawon 객체 메모리에 저장");
-		this.name=name;
+		this.name = name;
 	}
-	//출력 
-	public void print()
-	{
+
+	// 출력
+	public void print() {
 		// 객체 기능 활용
-		System.out.println("이름:"+name);
+		System.out.println("이름:" + name);
 	}
-	//메모리에 해제 
-	//객체의 메모리에서 사라질때 자동호출되는 메소드 (소멸자)
+
+	// 메모리에 해제
+	// 객체의 메모리에서 사라질때 자동호출되는 메소드 (소멸자)
 	/*
-	 *   A()  ==> new 
-	 *   ~A() ==> 메모리 해제 delete (GC) => 자동 메모리 해제 
+	 * A() ==> new ~A() ==> 메모리 해제 delete (GC) => 자동 메모리 해제
 	 */
 	@Override
 	protected void finalize() throws Throwable {
 		// TODO Auto-generated method stub
 		System.out.println("Sawon 객체 메모리 해제...");
 	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Sawon이 가지고 있는 이름은 "+name+"입니다";
+		return "Sawon이 가지고 있는 이름은 " + name + "입니다";
 	}
-	
+
 	// Object에서 재정의 (오버라이딩) => toString()
-	
+
 }
+
 public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        // 사원 기능 사용 
-		// 1. 메모리에 저장 
-		Sawon s=new Sawon("홍길동");
+		// 사원 기능 사용
+		// 1. 메모리에 저장
+		Sawon s = new Sawon("홍길동");
 		// com.sist.lib.Sawon@5e91993f
 		System.out.println(s.toString());// 주소값을 출력
 		System.out.println(s);
-		// 2. 활용 
+		// 2. 활용
 		s.print();
 		// 3. 메모리 해제 => s=null (GC)
-		s=null; // 사용하지 않는다 
-		// 4. 직접 해제 
+		s = null; // 사용하지 않는다
+		// 4. 직접 해제
 		System.gc(); // 가비지컬렉션 호출 (메모리에서 사용하지 않거나 , null일때 회수)
 		// finalize()가 호출되면 메모리에서 제거
-		
+
 	}
 
 }
-

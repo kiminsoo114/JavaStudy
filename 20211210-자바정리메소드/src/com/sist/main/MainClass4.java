@@ -68,6 +68,7 @@ public class MainClass4 {
 		System.out.println("컴퓨터:"+result[com]);
 		System.out.println("사용자:"+result[user]);
 		int r=com-user;
+	
 		if(r==-1 || r==2) {
 			System.out.println("사용자가 이겼습니다");
 		}

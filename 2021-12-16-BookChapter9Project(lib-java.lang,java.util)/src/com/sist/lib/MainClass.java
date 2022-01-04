@@ -1,4 +1,5 @@
 package com.sist.lib;
+
 /*
  *   1. 웹 개발자 (자바)
  *      = 변수 , 연산자 , 제어문 , 메소드 , 클래스 , 인터페이스 
@@ -79,33 +80,30 @@ package com.sist.lib;
  *         => 일반 데이터형==> parse데이터형() => 문자열을 원하는 데이터형 변환
  */
 import java.util.*;
+
 public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        // 정수 => 문자열 (웹)
-		// => 발생할 수 있는 에러 => NumberFormatException 
+		// 정수 => 문자열 (웹)
+		// => 발생할 수 있는 에러 => NumberFormatException
 		// 브라우저에서 전송 ==> list.jsp?page= 1 ==> String page=" 1"
-	    Scanner scan=new Scanner(System.in);
-	    System.out.print("첫번째 문자열 입력:");
-	    String num1=scan.next();
-	    System.out.print("두번째 문자열 입력:");
-	    String num2=scan.next();
-	    
-	    System.out.println("===== 더한 결과값 =====");
-	    //int i=Integer.parseInt(num1);// 문자열 => 정수형으로 변환 
-	    //int j=Integer.parseInt(num2);// 문자열 => 정수형으로 변환 
-	    //double d1=Double.parseDouble(num1); // 문자열 => 실수형 변환
-	    //double d2=Double.parseDouble(num2);
-	    //System.out.println(d1+d2);
-	    boolean b1=Boolean.parseBoolean(num1);
-	    boolean b2=Boolean.parseBoolean(num2);		
-	    System.out.println(b1);
-	    System.out.println(b2);
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("첫번째 문자열 입력:");
+		String num1 = scanner.next();
+		System.out.print("두번째 문자열 입력:");
+		String num2 = scanner.next();
+
+		System.out.println("===== 더한 결과값 =====");
+		// int i=Integer.parseInt(num1);// 문자열 => 정수형으로 변환
+		// int j=Integer.parseInt(num2);// 문자열 => 정수형으로 변환
+		// double d1=Double.parseDouble(num1); // 문자열 => 실수형 변환
+		// double d2=Double.parseDouble(num2);
+		// System.out.println(d1+d2);
+		boolean b1 = Boolean.parseBoolean(num1);
+		boolean b2 = Boolean.parseBoolean(num2);
+		System.out.println(b1);
+		System.out.println(b2);
 	}
 
 }
-
-
-
-
